@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.all
-    @all
+    @@all
   end
 
   def self.find_or_create_by_name(name)
@@ -32,7 +32,6 @@ class Artist
   end
 
   def print_songs
-    self.songs.each {|song| puts song.name}
-  end
-
+    self.songs.each {|song| puts song.name} 
+   end
 end
